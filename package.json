@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/perimetral/feathers-spanner-connector#readme",
   "dependencies": {
-    "@google-cloud/storage": "^1.5.2"
+    "@feathersjs/commons": "*",
+    "@feathersjs/errors": "*",
+    "@feathersjs/feathers": "*",
+    "@google-cloud/spanner": "*",
+    "nedb": "*",
+    "uniqid": "*"
   }
 }
