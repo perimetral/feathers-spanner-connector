@@ -18,7 +18,7 @@
   "homepage": "https://github.com/perimetral/feathers-spanner-connector#readme",
   "dependencies": {
     "@feathersjs/commons": "*",
-    "@feathersjs/errors": "*",
+    "@feathersjs/errors": "^3.2.1",
     "@feathersjs/feathers": "*",
     "@google-cloud/spanner": "*",
     "nedb": "*",
