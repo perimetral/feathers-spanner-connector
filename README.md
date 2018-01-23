@@ -30,13 +30,13 @@ app.use('test', feathersSpanner({
 	/* events: [],
 	pagination: false, */
 }));
-let worker = app.service('test');
+
+//	VERY IMPORTANT TO RUN IF OMITTING app.listen !!!
+app.setup();
 
 //	here it must be ready
-//	you are free to perform explicit check this way:
-console.log(`CONNECTOR IS ${worker.db_initialized ? READY : UNREADY}`);
-
 //	see examples of using below:
+let worker = app.service('test');
 const inspect = require('util').inspect;	//	for better logging
 await worker.create({ ATATA: 123, OLD: 99 });
 await worker.create({ ATATA: 124, YOUNG: 70 });
